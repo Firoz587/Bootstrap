@@ -1,0 +1,57 @@
+.banner-container{
+    height: 80vh;
+}
+.logo{
+    width: 100px;
+}
+.banner-img1{
+    height: 80vh;
+    /* width: 80vh; */
+}
+.banner-img2{
+    height: 80vh;
+    /* width: 80vh; */
+}
+.banner-img3{
+    height: 80vh;
+    /* width: 80vh; */
+}
+/* Basic footer styles */
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+footer div {
+    /* flex: 1; */
+    min-width: 150px; /* Ensures a base width for all items */
+}
+
+/* Smartphone responsive styles */
+@media (max-width: 776px) {
+    footer {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    footer div {
+        padding: 10px;
+    }
+
+    footer img.logo {
+        width: 100px; /* Scale down logo size on small screens */
+    }
+
+    footer h2, footer h4, footer h5, footer h6 {
+        font-size: 1em; /* Reduce font size for better fit */
+    }
+
+    footer li {
+        font-size: 0.9em; /* Slightly smaller font size for items */
+    }
+}
